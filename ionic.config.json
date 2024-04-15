@@ -1,0 +1,7 @@
+{
+  "name": "cellauto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
