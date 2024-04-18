@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">cellauto</string>
+    <string name="title_activity_main">cellauto</string>
+    <string name="package_name">net.zlyfer.cellauto</string>
+    <string name="custom_url_scheme">net.zlyfer.cellauto</string>
+</resources>
