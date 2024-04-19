@@ -5,12 +5,27 @@
 				<ion-icon name="chevron-forward-outline"></ion-icon>
 			</ion-menu-button>
 		</ion-buttons>
-		<ion-title>CellAuto</ion-title>
+		<ion-title>
+			CellAuto {{clickedCellType}}
+		</ion-title>
 		<ion-buttons slot="end">
+			<ion-button color="warning" (click)="debug()">
+				<ion-icon slot="icon-only" name="bug-outline"></ion-icon>
+			</ion-button>
 			<ion-button>
 				<ion-icon slot="icon-only" name="options-outline"></ion-icon>
 			</ion-button>
 		</ion-buttons>
 	</ion-toolbar>
 </ion-header>
-<div id="p5Canvas" #p5Canvas></div>
+
+<ion-content fullscreen>
+	<div id="p5Canvas" #p5Canvas></div>
+
+	<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+		<ion-fab-button [color]="paused ? 'success' : 'warning'" (click)="paused = !paused">
+			<ion-icon [name]="paused ? 'play' : 'pause'"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+
+</ion-content>
